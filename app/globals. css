@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #090b0e; color: #fff; font-family: Arial, Helvetica, sans-serif; }
+button, input { font: inherit; }
+.hero {
+  background:
+    radial-gradient(circle at 78% 20%, rgba(227,38,46,.22), transparent 28%),
+    radial-gradient(circle at 95% 95%, rgba(125,18,25,.22), transparent 35%),
+    linear-gradient(115deg, #171b22 0%, #101319 58%, #190e12 100%);
+}
+.hero:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(9,11,14,.05), rgba(9,11,14,.2));
+  pointer-events: none;
+}
+::selection { background: rgba(227,38,46,.45); }
